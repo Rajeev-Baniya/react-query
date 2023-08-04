@@ -1,0 +1,75 @@
+{
+  "superheroes": [
+    {
+      "id": 1,
+      "name": "Batman",
+      "alterEgo": "Bruce Wayne"
+    },
+    {
+      "id": 2,
+      "name": "Superman",
+      "alterEgo": "Clark Kent"
+    },
+    {
+      "id": 3,
+      "name": "Wonder Woman",
+      "alterEgo": "Princess Diana"
+    }
+  ],
+  "friends": [
+    {
+      "id": 1,
+      "name": "Chandler Bing"
+    },
+    {
+      "id": 2,
+      "name": "Joey Tribianni"
+    },
+    {
+      "id": 3,
+      "name": "Ross Geller"
+    },
+    {
+      "id": 4,
+      "name": "Rachel Green"
+    },
+    {
+      "id": 5,
+      "name": "Monica Geller"
+    },
+    {
+      "id": 6,
+      "name": "Phoebe Buffay"
+    }
+  ],
+  "users": [
+    {
+      "id": "rajeev@gmail.com",
+      "channelId": "coderajeev"
+    }
+  ],
+  "channels": [
+    {
+      "id": "coderajeev",
+      "courses": ["react", "vue", "angular"]
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "label": "red"
+    },
+    {
+      "id": 2,
+      "label": "blue"
+    },
+    {
+      "id": 3,
+      "label": "green"
+    },
+    {
+      "id": 4,
+      "label": "pink"
+    }
+  ]
+}
