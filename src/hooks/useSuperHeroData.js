@@ -3,6 +3,7 @@ import axios from "axios";
 
 const fetchSuperHero = ({ queryKey }) => {
   const heroId = queryKey[1];
+  console.log(heroId);
   return axios.get(`http://localhost:4000/superheroes/${heroId}`);
 };
 

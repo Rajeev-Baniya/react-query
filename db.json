@@ -14,6 +14,31 @@
       "id": 3,
       "name": "Wonder Woman",
       "alterEgo": "Princess Diana"
+    },
+    {
+      "name": "rajeev",
+      "alterEgo": "baniya",
+      "id": 4
+    },
+    {
+      "name": "name",
+      "alterEgo": "rajeev",
+      "id": 5
+    },
+    {
+      "name": "name",
+      "alterEgo": "rajeev",
+      "id": 6
+    },
+    {
+      "name": "name",
+      "alterEgo": "test",
+      "id": 7
+    },
+    {
+      "name": "rajeev",
+      "alterEgo": "baniya",
+      "id": 8
     }
   ],
   "friends": [
@@ -51,7 +76,11 @@
   "channels": [
     {
       "id": "coderajeev",
-      "courses": ["react", "vue", "angular"]
+      "courses": [
+        "react",
+        "vue",
+        "angular"
+      ]
     }
   ],
   "colors": [

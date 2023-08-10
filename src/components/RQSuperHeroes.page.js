@@ -1,12 +1,25 @@
 import { useQuery } from "react-query";
+import { useState } from "react";
 
 import axios from "axios";
+import { useAddSuperHeroData } from "../hooks/useSuperHeroesData";
 
 const fetchSuperHeroes = () => {
   return axios.get("http://localhost:4000/superheroes");
 };
 
 const RQSuperHeroesPage = () => {
+  const [name, setName] = useState("");
+
+  const [alterEgo, setAlterEgo] = useState("");
+
+  const { mutate: addHero } = useAddSuperHeroData();
+
+  const handleAddHeroClick = () => {
+    const hero = { name, alterEgo };
+    addHero(hero);
+  };
+
   const onSuccess = (data) => {
     console.log("perform side effect after data feching", data);
   };
@@ -51,6 +64,7 @@ const RQSuperHeroesPage = () => {
     return <h2>{error.message}</h2>;
   }
   console.log(data);
+
   return (
     // <>
     //   <h2>RQ Super Heroes page</h2>
@@ -63,6 +77,20 @@ const RQSuperHeroesPage = () => {
 
     <>
       <h2>RQ Super Heroes page</h2>
+      <div>
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        <input
+          type="text"
+          value={alterEgo}
+          onChange={(e) => setAlterEgo(e.target.value)}
+        />
+        <button onClick={handleAddHeroClick}>Add Hero</button>
+      </div>
+
       <button onClick={refetch}>Fetch Heroes</button>
 
       {data?.map((heroName) => {
